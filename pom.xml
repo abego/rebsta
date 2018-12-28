@@ -31,7 +31,7 @@
     <groupId>org.abego.rebsta</groupId>
     <artifactId>rebsta</artifactId>
     <packaging>pom</packaging>
-    <version>0.9.3</version>
+    <version>0.9.4-SNAPSHOT</version>
 
     <name>abego Rebsta</name>
 
