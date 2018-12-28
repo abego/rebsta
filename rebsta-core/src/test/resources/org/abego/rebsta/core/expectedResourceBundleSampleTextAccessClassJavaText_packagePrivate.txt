@@ -1,0 +1,31 @@
+package com.example.myapp;
+
+import java.text.MessageFormat;
+import java.util.ResourceBundle;
+
+import static java.util.ResourceBundle.getBundle;
+
+class Texts {
+    private static final String BUNDLE_NAME = "com.example.ResourceBundleSample";
+
+    private static final ResourceBundle BUNDLE = getBundle(BUNDLE_NAME);
+
+    static String key1() {
+        return textFor("key1"); //NON-NLS
+    }
+
+    static String key2(Object p0) {
+        return textFor("key2", p0); //NON-NLS
+    }
+
+    static String key3(Object p0, Object p1, Object p2, Object p3) {
+        return textFor("key3", p0, p1, p2, p3); //NON-NLS
+    }
+
+
+    private static String textFor(String key, Object... arguments) {
+        return BUNDLE.containsKey(key)
+                ? new MessageFormat(BUNDLE.getString(key)).format(arguments)
+                : MessageFormat.format("??{0}??", key); //NON-NLS
+    }
+}

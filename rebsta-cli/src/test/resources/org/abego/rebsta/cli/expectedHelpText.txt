@@ -1,0 +1,29 @@
+rebsta
+
+ResourceBundle Static Text Access
+
+usage: rebsta [options] resourcesRootDir sourceRootDir resourceBundleName
+
+Options:
+-c,--classname <arg>              The name of the texts access class (fully qualified)
+                                  [Default: same as ResourceBundleName]
+-h,--help                         print this message
+-jc,--javafile-charset <arg>      The charset used for the generated Java file [Default:
+                                  UTF-8]
+-pp,--package-private             The generated Java class and its accessor methods are
+                                  package-private [Default: public]
+-rc,--resourcebundle-charset <arg>The charset of the ResourceBundle file [Default:
+                                  ISO-8859-1]
+   --version                      The version of the Rebsta command line tool
+
+resourcesRootDir:   path of directory containing the resources. The directory must
+                    contain the ResourceBundle file ("*.properties"), maybe in some
+                    package subdirectories.
+sourceRootDir:      path of directory containing the Java sources. Will contain the
+                    generated static text access class, maybe in some package
+                    subdirectory.
+resourceBundleName: fully qualified name of the ResourceBundle. Will also be
+                    the full classname of the generated static text access class.
+
+For details see https://github.com/abego/rebsta.
+

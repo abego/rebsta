@@ -1,0 +1,7 @@
+rebsta-cli 0.9.3
+
+Copyright (C) 2018 Udo Borkowski
+
+This program comes with NO WARRANTY, to the extent permitted by law.
+You may redistribute copies of this program under the terms of a
+BSD License (https://www.abego-software.de/legal/apl-v10.html).

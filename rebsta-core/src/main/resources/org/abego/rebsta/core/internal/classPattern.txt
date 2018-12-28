@@ -1,0 +1,17 @@
+package {0};
+
+import java.text.MessageFormat;
+import java.util.ResourceBundle;
+
+import static java.util.ResourceBundle.getBundle;
+
+{2}class {1} '{'
+    private static final String BUNDLE_NAME = "{3}";
+
+    private static final ResourceBundle BUNDLE = getBundle(BUNDLE_NAME);
+
+{4}
+    private static String textFor(String key, Object... arguments) '{'
+{5}
+    '}'
+'}'

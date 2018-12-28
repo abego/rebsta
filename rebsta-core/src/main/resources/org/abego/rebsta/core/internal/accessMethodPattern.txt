@@ -1,0 +1,4 @@
+    {0}static String {1}({2}) '{'
+        return textFor("{3}"{4}); //NON-NLS
+    '}'
+

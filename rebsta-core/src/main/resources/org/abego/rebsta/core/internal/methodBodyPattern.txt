@@ -1,0 +1,3 @@
+        return BUNDLE.containsKey(key)
+                ? new MessageFormat(BUNDLE.getString(key)).format(arguments)
+                : MessageFormat.format("??{0}??", key); //NON-NLS
