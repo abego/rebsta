@@ -24,13 +24,13 @@
 
 package org.abego.rebsta.cli.internal;
 
+import org.abego.commons.lang.exception.MustNotInstantiateException;
 import org.apache.commons.cli.HelpFormatter;
 import org.apache.commons.cli.Options;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
 
-import static org.abego.commons.lang.exception.MustNotInstantiateException.throwMustNotInstantiate;
 import static org.abego.rebsta.cli.internal.ProjectInfo.artifactId;
 import static org.abego.rebsta.cli.internal.ProjectInfo.version;
 import static org.abego.rebsta.cli.internal.Texts.commandLineHeader;
@@ -43,7 +43,7 @@ class RebstaCommandTexts {
     private static final int HELP_TEXT_WIDTH = 90;
 
     RebstaCommandTexts() {
-        throwMustNotInstantiate();
+        throw new MustNotInstantiateException();
     }
 
     static String fullVersionText() {

@@ -26,8 +26,8 @@ package org.abego.rebsta.cli;
 
 import org.abego.commons.io.FileUtil;
 import org.abego.commons.io.PrintStreamToBuffer;
+import org.abego.commons.lang.RunOnClose;
 import org.abego.commons.lang.exception.MustNotInstantiateException;
-import org.abego.commons.misc.RunOnClose;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;

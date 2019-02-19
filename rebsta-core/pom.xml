@@ -28,6 +28,14 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <artifactId>rebsta</artifactId>
+        <groupId>org.abego.rebsta</groupId>
+        <version>0.9.4</version>
+    </parent>
+
+    <artifactId>rebsta-core</artifactId>
+
     <dependencies>
         <dependency>
             <groupId>org.abego.commons</groupId>
@@ -41,13 +49,5 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
-
-    <parent>
-        <artifactId>rebsta</artifactId>
-        <groupId>org.abego.rebsta</groupId>
-        <version>0.9.4-SNAPSHOT</version>
-    </parent>
-
-    <artifactId>rebsta-core</artifactId>
 
 </project>

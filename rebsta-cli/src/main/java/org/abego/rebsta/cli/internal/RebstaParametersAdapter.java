@@ -24,6 +24,7 @@
 
 package org.abego.rebsta.cli.internal;
 
+import org.abego.commons.lang.exception.MustNotInstantiateException;
 import org.abego.rebsta.core.RebstaException;
 import org.abego.rebsta.core.RebstaParameters;
 import org.abego.rebsta.core.RebstaParametersBuilder;
@@ -34,12 +35,11 @@ import java.nio.charset.UnsupportedCharsetException;
 import static org.abego.commons.io.FileUtil.file;
 import static org.abego.commons.javalang.ClassName.className;
 import static org.abego.commons.javalang.FullyQualifiedName.fullyQualifiedName;
-import static org.abego.commons.lang.exception.MustNotInstantiateException.throwMustNotInstantiate;
 
 class RebstaParametersAdapter {
 
     RebstaParametersAdapter() {
-        throwMustNotInstantiate();
+        throw new MustNotInstantiateException();
     }
 
     /**

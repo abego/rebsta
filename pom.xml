@@ -31,7 +31,7 @@
     <groupId>org.abego.rebsta</groupId>
     <artifactId>rebsta</artifactId>
     <packaging>pom</packaging>
-    <version>0.9.4-SNAPSHOT</version>
+    <version>0.9.4</version>
 
     <name>abego Rebsta</name>
 
@@ -52,8 +52,8 @@
 
         <build.timestamp>${maven.build.timestamp}</build.timestamp>
 
-        <abego-commons-base.version>0.9.3</abego-commons-base.version>
-        <abego-commons-test.version>0.9.3</abego-commons-test.version>
+        <abego-commons-base.version>0.9.4</abego-commons-base.version>
+        <abego-commons-test.version>0.9.4</abego-commons-test.version>
         <commons-cli.version>1.4</commons-cli.version>
         <junit-jupiter.version>5.3.2</junit-jupiter.version>
         <junit-platform-surefire-provider.version>1.1.0</junit-platform-surefire-provider.version>

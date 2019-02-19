@@ -1,4 +1,4 @@
-rebsta-cli 0.9.4-SNAPSHOT
+rebsta-cli 0.9.4
 
 Copyright (C) 2018 Udo Borkowski
 

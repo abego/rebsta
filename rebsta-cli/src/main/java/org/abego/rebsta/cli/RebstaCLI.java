@@ -24,12 +24,12 @@
 
 package org.abego.rebsta.cli;
 
+import org.abego.commons.lang.exception.MustNotInstantiateException;
 import org.abego.rebsta.core.RebstaException;
 
 import java.io.PrintStream;
 
 import static org.abego.commons.lang.ThrowableUtil.messageOrClassName;
-import static org.abego.commons.lang.exception.MustNotInstantiateException.throwMustNotInstantiate;
 import static org.abego.rebsta.cli.RebstaCommand.rebstaCommand;
 
 public class RebstaCLI {
@@ -41,7 +41,7 @@ public class RebstaCLI {
     public static final int ERROR_EXIT_STATUS = 1;
 
     RebstaCLI() {
-        throwMustNotInstantiate();
+        throw new MustNotInstantiateException();
     }
 
     /**

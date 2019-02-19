@@ -24,9 +24,9 @@
 
 package org.abego.rebsta.cli.internal;
 
+import org.abego.commons.lang.exception.MustNotInstantiateException;
 import org.apache.commons.cli.Options;
 
-import static org.abego.commons.lang.exception.MustNotInstantiateException.throwMustNotInstantiate;
 import static org.abego.rebsta.cli.RebstaCommand.CLASS_NAME_OPTION;
 import static org.abego.rebsta.cli.RebstaCommand.HELP_OPTION;
 import static org.abego.rebsta.cli.RebstaCommand.JAVAFILE_CHARSET_OPTION;
@@ -37,7 +37,7 @@ import static org.abego.rebsta.cli.RebstaCommand.VERSION_OPTION;
 class RebstaCommandOptions {
 
     RebstaCommandOptions() {
-        throwMustNotInstantiate();
+        throw new MustNotInstantiateException();
     }
 
     static Options rebstaCommandOptions() {
